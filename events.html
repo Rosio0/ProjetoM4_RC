@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Car Company - Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #content-container {
+            position: relative;
+            align-self: flex-start;
+            width: 100%;
+            height: calc(100vh - 115px); /* Adjust the height based on your design */
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0; /* Set a lower z-index for the video */
+        }
+
+        .event-description {
+            z-index: 1; /* Set a higher z-index for the content */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(15, 14, 14); /* Adjust text color for better readability */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tesla</h1>
+    </header>
+
+    <nav>
+        <button onclick="location.href='Pform.html'">Newsletter</button>
+        <button onclick="location.href='Pg1.html'">Homepage</button>
+        <button onclick="location.href='products.html'">Modelos</button>
+        <button onclick="location.href='Contactos.html'">Contactos</button>
+    </nav>
+    <nav>
+        <marquee behavior="scroll" direction="left" >
+        <a href="Pform.html">Inscreva se na Newsletter para receber novidades em primeira mão.</a>
+    </marquee>
+    </nav>
+
+    <div id="content-container">
+        <video autoplay muted loop>
+            <source src="background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="event-description">
+            <h2>Lançamento Powerwall Lisboa</h2>
+            <p>Data: November 22, 2023</p>
+            <p>Horas: 17-19h </p>
+            <p>Morada: <a href="https://www.google.com/maps?q=Lisbon-Belas, R. Dona Carlota Joaquina lote 173, 2605-239 Belas, Portugal" target="_blank">Lisbon-Belas, R. Dona Carlota Joaquina lote 173, 2605-239 Belas, Portugal</a></p>
+
+            <p>Está convidado a ser um dos primeiros a conhecer a Powerwall no Lisboa, no nosso evento de lançamento a 22 de novembro. <br>
+  
+                Powerwall armazena energia solar para um acesso fiável a qualquer momento. Durante o evento, o técnico de instalação certificado da Tesla SunEnergy irá partilhar como integrar Powerwall em sua casa e começar a gerir o consumo e a produção de energia da sua casa em tempo real. <br>
+                 
+                Powerwall armazena energia solar para um acesso fiável a qualquer momento. Durante o evento, o técnico de instalação certificado da Tesla,Solmaior, irá partilhar como integrar Powerwall em sua casa e começar a gerir o consumo e a produção de energia da sua casa em tempo real. </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Direitos reservados a Inteligencia do Ambrósio e da Artificial.</p>
+    </footer>
+
+</body>
+</html>

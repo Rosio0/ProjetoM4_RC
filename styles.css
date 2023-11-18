@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery div {
+    position: relative;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.image-label {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+marquee {
+    font-size: 1.2em;
+    color: #555;
+}
+
+a {
+    color: #183aaa;
+    text-decoration: none;
+}
+
+header {
+    background-color: #141313;
+    color: white;
+    text-align: center;
+    padding: 0.6em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 0.5em;
+}
+
+nav button {
+    color: white;
+    background-color: #555;
+    border: none;
+    padding: 1em;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.car-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-right: 20px; /* Add some spacing between the image and text */
+}
+
+.car-image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+.text-details {
+    flex: 1;
+}
+
+
+
+

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Tesla</title>
+    <link rel="shortcut icon" href="T.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function changeImage(element, newSrc) {
+            element.src = newSrc;
+        }
+
+        function restoreImage(element, originalSrc) {
+            element.src = originalSrc;
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1 id="Cima">Tesla</h1>
+    </header>
+
+    <nav>
+        <button onclick="location.href='Pg1.html'">Pagina Inicial</button>
+        <button onclick="location.href='events.html'">Eventos</button>
+        <button onclick="location.href='Contactos.html'">Contactos</button>
+    </nav>
+
+    <section class="gallery">
+        <div>
+            <a href="#Model3"><img  src="M3f.png" alt="Model 3" onmouseover="changeImage(this, 'M3t.png')" onmouseout="restoreImage(this, 'M3f.png')" title="Model 3"></a>
+            <p class="image-label">Model 3</p>
+        </div>
+        <div>
+            <a href="#ModelX"><img  src="MXf.png" alt="Model X" onmouseover="changeImage(this, 'MXt.png')" onmouseout="restoreImage(this, 'MXf.png')" title="Model X"></a>
+            <p class="image-label">Model X</p>
+        </div>
+        <div>
+            <br> <a href="#ModelY"><img src="MYf.png" alt="Model Y" onmouseover="changeImage(this, 'MYt.png')" onmouseout="restoreImage(this, 'MYf.png')" title="Model Y"></a>
+            <br><p class="image-label">Model Y</p>
+        </div>
+        <div>
+            <br> <a href="#ModelS"><img src="MSf.png" alt="Model S" onmouseover="changeImage(this, 'MSt.png')" onmouseout="restoreImage(this, 'MSf.png')" title="Model S"></a>
+            <br><p class="image-label">Model S</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Veiculos</h2>
+    
+        <div class="product-details">
+            <div class="video-frame">
+                <video autoplay muted loop>
+                    <source src="M3V.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+            <div class="audio-player">
+                <p><b><u>Audio do carro</u></b></p>
+                <audio controls>
+                    <source src="noise.mp4" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <section class="product-details">
+
+                <br id="Model3">
+                <div class="flex-container">
+                    <div class="car-image">
+                        <img src="M3f.png" alt="Car Image Model X">
+                    </div>
+            
+                    <div class="text-details">
+                        <h3 id="Model3">Tesla Model 3 Standard Range</h3>
+                            <br>
+                
+                            <p><b>Especificações Técnicas:</b></p>
+                            <ul>
+                                <li>Tração: Tração traseira</li>
+                                <li>Autonomia (WLTP): 513 km</li>
+                                <li>Aceleração (0-100 km/h): 6,1 segundos</li>
+                            </ul>
+                
+                            <p><b>Dimensões:</b></p>
+                            <ul>
+                                <li>Peso: 1765 kg</li>
+                                <li>Capacidade de Carga: 682 litros</li>
+                                <li>Jantes: 18" ou 19"</li>
+                                <li>Bancos: 5 adultos</li>
+                            </ul>
+                
+                            <p><b>Ecrãs:</b></p>
+                            <ul>
+                                <li>Ecrã tátil de 15,4"</li>
+                                <li>Ecrã tátil traseiro de 8"</li>
+                            </ul>
+                
+                            <!-- Add more sections as needed -->
+                
+                            <p><b>Carregamento:</b></p>
+                            <ul>
+                                <li>Tipo de Carregamento: Supercharger</li>
+                                <li>Velocidade de Carregamento: Até 282 km em 15 minutos</li>
+                                <li>Máx./Tipo de Pagamento: 170 kW; Pago consoante a utilização</li>
+                            </ul>
+                
+                            <p><b>Garantia:</b></p>
+                            <ul>
+                                <li>Básica do Veículo: 4 anos ou 80,000 km, conforme o que ocorrer primeiro</li>
+                                <li>Bateria e Unidade de Acionamento: 8 anos ou 160,000 km, conforme o que ocorrer primeiro</li>
+                            </ul>
+                        </div>
+            
+               
+        
+            </section>
+           
+        </div>
+    </section>
+
+    <section class="product-details">
+       <br><br id="ModelX"><br>
+        <div class="flex-container">
+            <div class="car-image">
+                <img src="MXf.png" alt="Car Image Model X">
+            </div>
+    
+            <div class="text-details">
+                
+                <h3>Tesla Model X</h3>
+<br>
+
+<p><b>Especificações Técnicas:</b></p>
+<ul>
+    <li>Autonomia (WLTP): 576 km</li>
+    <li>Coeficiente de resistência: 0,24 Cd</li>
+    <li>Jantes: 20'' ou 22''</li>
+    <li>Rebocar: 2300 kg</li>
+    <li>Peso: 2335 kg</li>
+    <li>Bancos: Até 7</li>
+</ul>
+
+<p><b>Carregamento com Supercharger máx.:</b> 250 kW</p>
+<p><b>Aceleração (0-100 km/h):</b> 3,9 segundos</p>
+<p><b>Velocidade máxima:</b> 250 km/h</p>
+<p><b>Potência do veículo:</b> 670 CV</p>
+
+<p><b>Potência do motor (R85):</b></p>
+<ul>
+    <li>Dianteira: 252 kW</li>
+    <li>Traseira: 252 kW</li>
+</ul>
+
+<p><b>Grupo motopropulsor:</b> Motor duplo</p>
+            </div>
+        </div>
+    
+       
+    
+       
+    </section>
+    
+
+    <section class="product-details">
+        <br id="ModelY">
+        <div class="flex-container">
+            <div class="car-image">
+                <img src="MYf.png" alt="Car Image Model Y">
+            </div>
+    
+            <div class="text-details">
+                <h3 id="ModelY">Tesla Model Y</h3>
+                <br>
+    
+                <p><b>Especificações Técnicas:</b></p>
+                <ul>
+                    <li>Performance</li>
+                    <li>Bateria: Long Range</li>
+                    <li>Aceleração (0-100 km/h): 3,7 segundos</li>
+                    <li>Autonomia (WLTP): 514 km</li>
+                    <li>Tração: Motor duplo tração integral</li>
+                    <li>Bancos: 5 adultos</li>
+                    <li>Jantes: 21"</li>
+                    <li>Peso: 1995 kg</li>
+                    <li>Volume de carga máx.: 2158 litros</li>
+                    <li>Velocidade máxima: 250 km/h</li>
+                </ul>
+    
+                <p><b>Ecrãs:</b></p>
+                <ul>
+                    <li>Ecrã tátil de 15"</li>
+                </ul>
+    
+                <p><b>Carregamento:</b></p>
+                <ul>
+                    <li>Tipo de Carregamento: Supercharger</li>
+                    <li>Velocidade de Carregamento: Até 250 kW em 15 minutos</li>
+                    <li>Máx./Tipo de Pagamento: 250 kW; Pago consoante a utilização</li>
+                </ul>
+    
+                <p><b>Garantia:</b></p>
+                <ul>
+                    <li>Componentes básicos do veículo: 4 anos ou 80,000 km, conforme o que ocorrer primeiro</li>
+                    <li>Bateria e unidade de acionamento: 8 anos ou 192,000 km, conforme o que ocorrer primeiro</li>
+                </ul>
+            </div>
+    
+           
+        </div>
+    </section>
+    
+    <section class="product-details">
+        <br><br id="ModelS"><br><br>
+        <div class="flex-container">
+            
+            <div class="car-image">
+                <img src="MSf.png" alt="Car Image Model S">
+            </div>
+    
+            <div class="text-details">
+                <h3 id="ModelS">Tesla Model S</h3>
+                <br>
+    
+                <p><b>Especificações Técnicas:</b></p>
+                <ul>
+                    <li>Autonomia (WLTP): 634 km</li>
+                    <li>Coeficiente de resistência: 0,208 Cd</li>
+                    <li>Jantes: 19" ou 21"</li>
+                    <li>Carga: 793 litros</li>
+                    <li>Peso: 2068 kg</li>
+                    <li>Carregamento com Supercharger máx.: 250 kW</li>
+                    <li>Aceleração (0-100 km/h): 3,2 segundos</li>
+                    <li>Velocidade máxima: 250 km/h</li>
+                </ul>
+    
+                <p><b>Potência do veículo:</b></p>
+                <p>670 CV (Com base em testes de aceleração, simulação e limites de bateria)</p>
+    
+                <p><b>Potência do motor (R85):</b></p>
+                <ul>
+                    <li>Dianteira: 252 kW</li>
+                    <li>Traseira: 252 kW</li>
+                </ul>
+    
+                <p><b>Grupo motopropulsor:</b></p>
+                <p>Motor duplo</p>
+            </div>
+    
+            
+        </div>
+        
+    </section>
+   <a href="#Cima"><p> &nbsp<u>Voltar</u></p></a> 
+    
+
+    <footer>
+        <p>&copy; Direitos reservados a Inteligencia do Ambrósio e da Artificial.</p>
+    </footer>
+
+</body>
+</html>

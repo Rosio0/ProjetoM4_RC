@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Tesla</title>
+    <link rel="shortcut icon" href="T.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         #content-container {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 115px); /* Adjust the height based on your design */
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0; /* Set a lower z-index for the video */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tesla</h1>
+    </header>
+
+ <nav>
+            <button onclick="location.href='Pform.html'">Newsletter</button>
+            <button onclick="location.href='products.html'">Modelos</button>
+            <button onclick="location.href='events.html'">Eventos</button>
+            <button onclick="location.href='Contactos.html'">Contactos</button>
+        </nav>
+
+        <div id="content-container">
+            <video autoplay muted loop>
+                <source src="Tesla.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+<footer>
+    <p>&copy; Direitos reservados a Inteligencia do Ambrósio e da Artificial.</p>
+        </footer>
+</body>
+</html>
