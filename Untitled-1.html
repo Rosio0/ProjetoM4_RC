@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading Page</title>
+    <title>Redirecting to the Future</title>
     <style>
+        /* Fullscreen Background */
         body {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
+            background: url('https://source.unsplash.com/1920x1080/?tesla,car') no-repeat center center/cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative;
         }
 
+        /* Tesla Logo */
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Loading Animation */
         svg {
             width: 3.25em;
             transform-origin: center;
@@ -21,7 +36,7 @@
 
         circle {
             fill: none;
-            stroke: hsl(214, 97%, 59%);
+            stroke: hsl(0, 100%, 50%);
             stroke-width: 2;
             stroke-dasharray: 1, 200;
             stroke-dashoffset: 0;
@@ -29,45 +44,51 @@
             animation: dash4 1.5s ease-in-out infinite;
         }
 
-        @keyframes rotate4 {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
+        @keyframes rotate4 { 100% { transform: rotate(360deg); } }
         @keyframes dash4 {
-            0% {
-                stroke-dasharray: 1, 200;
-                stroke-dashoffset: 0;
-            }
-
-            50% {
-                stroke-dasharray: 90, 200;
-                stroke-dashoffset: -35px;
-            }
-
-            100% {
-                stroke-dashoffset: -125px;
-            }
+            0% { stroke-dasharray: 1, 200; stroke-dashoffset: 0; }
+            50% { stroke-dasharray: 90, 200; stroke-dashoffset: -35px; }
+            100% { stroke-dashoffset: -125px; }
         }
+
+        /* Countdown Timer */
+        .countdown {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
     </style>
-    
 </head>
 <body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/2560px-Tesla_Motors.svg.png" class="logo" alt="Tesla Logo">
+    <h2>Welcome to the Future of Driving</h2>
     <svg viewBox="0 0 64 64">
         <circle cx="32" cy="32" r="28" />
     </svg>
-    
-	
-	<script LANGUAGE="JavaScript">
-	window.setTimeout("expirou()",5000); //passados 10 segundos 
+    <p class="countdown">Redirecting in <span id="timer">5</span> seconds...</p>
 
-	function expirou ()
-	{
-	window.open("index.html");
-	}
-	
-	</script>
-	
+    <script>
+        let timeLeft = 5; // Countdown from 5 seconds
+        const timerElement = document.getElementById('timer');
+
+        function updateCountdown() {
+            timeLeft--;
+            timerElement.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                window.location.href = "index.html"; // Redirect to main page
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
 </body>
 </html>
+
