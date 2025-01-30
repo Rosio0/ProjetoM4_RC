@@ -1,4 +1,4 @@
-# 🚗 Tesla Information Hub
+# 🚗 Car Company Showcase
 
 An interactive web project showcasing Tesla's vehicle lineup with detailed specifications, multimedia elements, and user engagement features.
 
